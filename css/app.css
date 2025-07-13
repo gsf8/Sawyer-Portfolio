@@ -1,291 +1,175 @@
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sawyer Fletcher's Portfolio</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-.interlock{
-  box-shadow: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1000px;
-  max-width: 0px;
-}
-.work{
-  width: 100%;
-}
-.box {
-  position: static;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: black;
-  width: calc(576px/2);
-  height: 288px;
-  background-image: url("../Images/selfie-01.png");
-  animation: animate 1s steps(2) infinite;
-  margin-bottom: 40px;
-}
+    nav.grid-x {
+      background-color: #111;
+      padding: 1rem 0;
+      border-bottom: 1px solid #333;
+    }
 
-@keyframes animate {
-  from {
-    background-position: 0;
-  }
+    nav a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding: 0.5rem;
+    }
 
-  to {
-    background-position: 576px;
-  }
-}
+    nav a:hover {
+      color: #1e90ff;
+    }
 
-/*coding from https://codepen.io/joshnh/pen/paxbE*/
-figure {
-  position: relative;
-  height: 200px;
-  margin: 1.5em;
-  width: 300px;
-  float: left;
-}
+    .portfolio-grid {
+      padding: 2rem 1rem;
+    }
 
+    .art {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
 
-img {
-  background-color: #222;
-  box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, .25);
-  display: block;
-  -webkit-transition: .5s;
-}
+    figure {
+      margin: 1rem 0;
+      text-align: center;
+    }
 
-figure:hover img {
-  box-shadow: none;
-}
+    figcaption h5 {
+      color: #fff;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
 
-figcaption {
-  background-color: gray;
-  color: #fff;
-  height: 130px;
-  padding: 1.5em;
-  -webkit-transform: rotateX(-90deg);
-  -webkit-transform-origin: 150% 0;
-  -webkit-transition: .5s;
-}
+    .interlock {
+      display: block;
+      max-width: 100%;
+      margin: 3rem auto;
+    }
+  </style>
+</head>
+<body>
 
-figure:hover figcaption {
-  box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, .25);
-}
+  <!-- Navigation -->
+  <nav class="grid-x grid-margin-x text-center">
+    <div class="cell small-3" id="gabe"><a href="index.html">SAWYER</a></div>
+    <div class="cell small-3"><a href="work.html">WORK</a></div>
+    <div class="cell small-3"><a href="about.html">ABOUT</a></div>
+    <div class="cell small-3"><a href="contact.html">CONTACT</a></div>
+  </nav>
 
-h3 {
-  font-weight: bold;
-}
+  <!-- Portfolio Grid -->
+  <section class="grid-container portfolio-grid">
+    <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
 
-h3 {
-  font-weight: bold;
-}
+      <div class="cell">
+        <figure>
+          <a href="https://gsf8.github.io/boostblends/index.html">
+            <img src="Images/boostblendsthumbnailsiteview.png" alt="Complex Website Design" class="art">
+            <figcaption><h5>Complex Website Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
 
-html {
-  background: #e6e9e9;
-}
+      <div class="cell">
+        <figure>
+          <a href="Marianas Trench/index.html">
+            <img src="Images/marianastrenchwebsite.jpg" alt="Website Redesign" class="art">
+            <figcaption><h5>Website Redesign</h5></figcaption>
+          </a>
+        </figure>
+      </div>
 
-body {
-  background: #fff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-  color: #545454;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 2em 2em 8em;
-  height: 1500px;
-}
+      <div class="cell">
+        <figure>
+          <a href="Project1.html">
+            <img src="Images/menudesign.jpg" alt="Restaurant Menu Design" class="art">
+            <figcaption><h5>Restaurant Menu Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
 
-a {
-  color: black;
-}
+      <div class="cell">
+        <figure>
+          <a href="Project2.html">
+            <img src="Images/businesscard.jpg" alt="Business Card Design" class="art">
+            <figcaption><h5>Business Card Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
 
-nav {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 20px;
-  font-family: 'Fira Sans', sans-serif;
-}
-.workexample{
-  font-weight: 400;
-  line-height: 1.3;
-  text-align: justify;
-  max-width: 550px;
-  margin-left: 50px;
-  margin-bottom: 10px;
-  font-family: 'Fira Sans', sans-serif;
-}
-.workexample2{
-  font-weight: 400;
-  line-height: 1.3;
-  text-align: justify;
-  max-width: 550px;
-  margin-left: 50px;
-  margin-bottom: 50px;
-  font-family: 'Fira Sans', sans-serif;
-}
-h5 {
-  padding-bottom: 15px;
-}
-h4{
-  font-weight: 600;
-  line-height: 1.3;
-  text-align: left;
-  margin-left: 50px;
-  margin-bottom: 30px;
-  font-family: 'Fira Sans', sans-serif;
-}
-h1, h3, h5, h6 {
-  font-weight: 600;
-  line-height: 1.3;
-  text-align: center;
-  font-family: 'Fira Sans', sans-serif;
-}
+      <div class="cell">
+        <figure>
+          <a href="Project3.html">
+            <img src="Images/howtoinformationdesign.jpg" alt="How to Information Design" class="art">
+            <figcaption><h5>How to Information Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
 
-h2 {
-  font-weight: 600;
-  line-height: 1.3;
-  text-align: justify;
-  max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-  font-family: 'Fira Sans', sans-serif;
-}
+      <div class="cell">
+        <figure>
+          <a href="Project4.html">
+            <img src="Images/bunnybites.jpg" alt="Rabbit Products Package Design" class="art">
+            <figcaption><h5>Rabbit Products Package Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
 
-}
-.logo {
-  padding-bottom: 15px;
-  position: relative;
-  height: 100%;
-  width: 30%;
-  max-width: 200px;
-}
+      <div class="cell">
+        <figure>
+          <a href="Project5.html">
+            <img src="Images/lightbulbpackaging.jpg" alt="Lightbulb Package Design" class="art">
+            <figcaption><h5>Lightbulb Package Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
 
-#lblGreetings {
-  text-align: center;
-  font-family: 'Fira Sans', sans-serif;
-}
+      <div class="cell">
+        <figure>
+          <a href="Project7.html">
+            <img src="Images/acm.jpg" alt="Logo Design" class="art">
+            <figcaption><h5>Logo Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
 
-/*Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
-.slideshow-container {
-  max-width: 400px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
+      <div class="cell">
+        <figure>
+          <a href="Project8.html">
+            <img src="Images/solepurpose.jpg" alt="Slogan Design Guidelines" class="art">
+            <figcaption><h5>Slogan Design Guidelines</h5></figcaption>
+          </a>
+        </figure>
+      </div>
 
-.mySlides {
-  display: none;
-}
+    </div>
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+    <img src="Images/interlocktype.jpg" alt="Interlock Type" class="interlock">
+  </section>
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
-  animation-name: fade;
-  animation-duration: 5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-/*End*/
-.tiles {
-  text-align: center;
-
-}
-p {
-  text-align: justify;
-  max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.work {
-  text-align: left;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  max-width: 8000px;
-}
-
-.art {
-  display: block;
-  width: 100%;
-  max-width: 800px;
-  height: 100%;
-}
-
-form {
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  padding: 2em 2em 8em;
-}
-
-/*coding from https://www.w3schools.com/css/css3_transitions.asp*/
-.submit {
-  width: 100px;
-  height: 40px;
-  background: gray;
-  color: #ffffff;
-  position: absolute;
-  font-weight: bold;
-  font-size: 15px;
-  float: left;
-  -webkit-transition: -webkit-transform 1s, opacity 1s, background 1s, width 1s, height 1s, font-size 1s;
-  -o-transition-property: width, height, -o-transform, background, font-size, opacity;
-  -o-transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
-  -moz-transition-property: width, height, -o-transform, background, font-size, opacity;
-  -moz-transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
-  transition-property: width, height, transform, background, font-size, opacity;
-  transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
-  opacity: 0.4;
-}
-
-.submit:hover {
-  opacity: 1;
-  background: black;
-  width: 200px;
-  height: 80px;
-  font-size: 35px;
-}
+  <!-- Scripts -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
