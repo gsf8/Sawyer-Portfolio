@@ -1,102 +1,175 @@
 <!doctype html>
-<html class="no-js" lang="zxx"  dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sawyer Fletcher's Portfolio</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    <nav class="grid-container full"></nav>
-    <nav class="grid-x grid-margin-x">
-      <div class="cell small-3" id="gabe"><a href="index.html">SAWYER</a></div>
-      <div class="cell small-3"><a href="work.html">WORK</a></div>
-      <div class="cell small-3"><a href="about.html">ABOUT</a></div>
-      <div class="cell small-3"><a href="contact.html">CONTACT</a></div>
-    </nav>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sawyer Fletcher's Portfolio</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-<!-- code from https://codepen.io/joshnh/pen/paxbE -->
-<figure>
-  <a href="https://gsf8.github.io/boostblends/index.html">
-  <img src="Images/boostblendsthumbnailsiteview.png" alt="image" class="art">
-    <figcaption>
-        <h5>Complex Website Design</h5>
-    </figcaption>
-    </a>
-</figure>
-<figure>
-  <a href="Marianas Trench/index.html">
-  <img src="Images/marianastrenchwebsite.jpg" alt="image" class="art">
-    <figcaption>
-        <h5>Website Redesign</h5>
-    </figcaption>
-    </a>
-</figure>
-    <figure>
-      <a href="Project1.html">
-      <img src="Images/menudesign.jpg" alt="image" class="art">
-        <figcaption>
-            <h5>Restaurant Menu Design</h5>
-        </figcaption>
-      </a>
-    </figure>
-    <figure>
-      <a href="Project2.html">
-      <img src="Images/businesscard.jpg" alt="image" class="art">
-        <figcaption>
-            <h5>Business Card Design</h5>
-        </figcaption>
-      </a>
-    </figure>
-    <figure>
-      <a href="Project3.html">
-      <img src="Images/howtoinformationdesign.jpg" alt="image" class="art">
-        <figcaption>
-            <h5>How to Information Design</h5>
-        </figcaption>
-        </a>
-      </a>
-    </figure>
-    <figure>
-      <a href="Project4.html">
-      <img src="Images/bunnybites.jpg" alt="image" class="art">
-        <figcaption>
-            <h5>Rabbit Products Package Design</h5>
-        </figcaption>
-        </a>
-    </figure>
-    <figure>
-      <a href="Project5.html">
-      <img src="Images/lightbulbpackaging.jpg" alt="image" class="art">
-        <figcaption>
-            <h5>Lightbulb Package Design</h5>
-        </figcaption>
-        </a>
-    </figure>
-    <figure>
-      <a href="Project7.html">
-      <img src="Images/acm.jpg" alt="image" class="art">
-        <figcaption>
-            <h5>Logo Design</h5>
-        </figcaption>
-        </a>
-    </figure>
-    <figure>
-      <a href="Project8.html">
-      <img src="Images/solepurpose.jpg" alt="image" class="art">
-        <figcaption>
-            <h5>Slogan Design Guidelines</h5>
-        </figcaption>
-      </a>
-    </figure>
-    <img src="Images/interlocktype.jpg" class="interlock">
+    nav.grid-x {
+      background-color: #111;
+      padding: 1rem 0;
+      border-bottom: 1px solid #333;
+    }
 
+    nav a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding: 0.5rem;
+    }
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    nav a:hover {
+      color: #1e90ff;
+    }
+
+    .portfolio-grid {
+      padding: 2rem 1rem;
+    }
+
+    .art {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    figure {
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    figcaption h5 {
+      color: #fff;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .interlock {
+      display: block;
+      max-width: 100%;
+      margin: 3rem auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="grid-x grid-margin-x text-center">
+    <div class="cell small-3" id="gabe"><a href="index.html">SAWYER</a></div>
+    <div class="cell small-3"><a href="work.html">WORK</a></div>
+    <div class="cell small-3"><a href="about.html">ABOUT</a></div>
+    <div class="cell small-3"><a href="contact.html">CONTACT</a></div>
+  </nav>
+
+  <!-- Portfolio Grid -->
+  <section class="grid-container portfolio-grid">
+    <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
+
+      <div class="cell">
+        <figure>
+          <a href="https://gsf8.github.io/boostblends/index.html">
+            <img src="Images/boostblendsthumbnailsiteview.png" alt="Complex Website Design" class="art">
+            <figcaption><h5>Complex Website Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="cell">
+        <figure>
+          <a href="Marianas Trench/index.html">
+            <img src="Images/marianastrenchwebsite.jpg" alt="Website Redesign" class="art">
+            <figcaption><h5>Website Redesign</h5></figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="cell">
+        <figure>
+          <a href="Project1.html">
+            <img src="Images/menudesign.jpg" alt="Restaurant Menu Design" class="art">
+            <figcaption><h5>Restaurant Menu Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="cell">
+        <figure>
+          <a href="Project2.html">
+            <img src="Images/businesscard.jpg" alt="Business Card Design" class="art">
+            <figcaption><h5>Business Card Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="cell">
+        <figure>
+          <a href="Project3.html">
+            <img src="Images/howtoinformationdesign.jpg" alt="How to Information Design" class="art">
+            <figcaption><h5>How to Information Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="cell">
+        <figure>
+          <a href="Project4.html">
+            <img src="Images/bunnybites.jpg" alt="Rabbit Products Package Design" class="art">
+            <figcaption><h5>Rabbit Products Package Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="cell">
+        <figure>
+          <a href="Project5.html">
+            <img src="Images/lightbulbpackaging.jpg" alt="Lightbulb Package Design" class="art">
+            <figcaption><h5>Lightbulb Package Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="cell">
+        <figure>
+          <a href="Project7.html">
+            <img src="Images/acm.jpg" alt="Logo Design" class="art">
+            <figcaption><h5>Logo Design</h5></figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="cell">
+        <figure>
+          <a href="Project8.html">
+            <img src="Images/solepurpose.jpg" alt="Slogan Design Guidelines" class="art">
+            <figcaption><h5>Slogan Design Guidelines</h5></figcaption>
+          </a>
+        </figure>
+      </div>
+
+    </div>
+
+   
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
